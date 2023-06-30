@@ -1,0 +1,22 @@
+name: Deploy to server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install sshpass
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sshpass
+
+      - name: Deploy code
+        run: |
+          sshpass -p "${{ secrets.KEY }}" ssh -oStrictHostKeyChecking\=no -tt root@vps.jimdev.top "cd /var/www/myapp && git pull"
