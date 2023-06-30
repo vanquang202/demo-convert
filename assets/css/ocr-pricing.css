@@ -1,0 +1,9 @@
+.ocr-price-wrapper{
+    width: 25rem !important;
+}
+
+@media (max-width: 768px) {
+    .ocr-price-wrapper{
+        width: 90% !important; 
+    }
+  }

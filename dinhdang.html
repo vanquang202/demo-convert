@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>HMDIGI </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="./assets/img/favicon.png" rel="icon">
+    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Icon fontawawesome -->
+    <link href="./assets/css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/css/fontawesome/css/solid.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/dinhdang.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="fixed-top  shadow   ">
+        <div class="container d-flex align-items-center  ">
+
+            <h1 class="logo me-auto"><a href="index.html">HMDIGI</a></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="./ocr.html">OCR</a></li>
+
+                    <li class="dropdown"><a href="#?"><span>Chuyển đổi </span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Chuyển đổi hình ảnh <i class="fa-solid fa-image"></i> </a></li>
+                            <li class="dropdown"><a href="#"><span> Chuyển đổi âm thanh <i
+                                            class="fa-brands fa-soundcloud"></i>
+                                    </span> </a>
+                                <ul>
+                                    <li><a href="#">Chất lượng 1</a></li>
+                                    <li><a href="#">Chất lượng 2</a></li>
+                                    <li><a href="#">Chất lượng 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> Chuyển đổi video <i class="fa-solid fa-video"></i></a></li>
+                            <li><a href="#"> Chuyển đổi tài liệu <i class="fa-solid fa-file"></i></a></li>
+                            <li><a href="#">Lưu trữ chuyển đổi <i class="fa-solid fa-boxes-stacked"></i> </a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="">Development Api</a></li>
+                    <li>
+                        <div class="dropdown ">
+                            <a class="   " type="button" id="dropdownMenuLogin" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Đăng nhập
+                            </a>
+                            <div class="dropdown-menu p-4 bg-light dropdown-menu-login"
+                                aria-labelledby="dropdownMenuLogin">
+                                <input type="text" class="form-control mb-2 w-100" placeholder="Email">
+                                <input type="password" class="form-control mb-2 w-100" placeholder="Mật khẩu ">
+                                <div class="d-flex  align-items-center">
+                                    <button class="btn btn-outline-primary">Đăng nhập</button>
+                                    <img class="ms-auto" src="./assets/img/facebook-icon.png" alt="" width="40px">
+                                    <img src="./assets/img/google-icon.png" alt="" width="40px">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li><a class="border-primary border px-2 py-1 rounded mx-2 " href="./dangky.html">Đăng ký</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="  d-flex align-items-center">
+
+        <div class="container">
+            <div class="page-title text-center">
+                <h1 class="text-danger">Định dạng File</h1>
+            </div>
+
+            <div class="row m-0 p-0 ">
+                <div class="col-xl-9 col-12 m-0">
+                    <div id="fm-audio" class="item-format pb-4">
+                        <p>Audio</p>
+                        <div class="wrapper-format">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th width="20%" scope="col">Định dạng</th>
+                                        <th width="80%" scope="col">Miêu tả </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-headphones"></i>
+                                                <span class="ms-2"> 8SVX</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>Amiga 8SVX </span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-headphones"></i>
+                                                <span class="ms-2"> AAC</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>Advanced Audio Coding</span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-headphones"></i>
+                                                <span class="ms-2"> AC3</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>AC3 Audio File</span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-headphones"></i>
+                                                <span class="ms-2"> AIFF</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>
+                                                    Định dạng file Audio Interchange </span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-headphones"></i>
+                                                <span class="ms-2">AMB</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>Ambisonic B-Format </span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="fm-video" class="item-format py-4">
+                        <p>Video</p>
+                        <div class="wrapper-format">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th width="20%" scope="col">Định dạng</th>
+                                        <th width="80%" scope="col">Miêu tả </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-vector-square"></i>
+                                                <span class="ms-2"> 3G2</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span> Third Generation Partnership Project</span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="fm-vectors" class="item-format py-4">
+                        <p>Vectors</p>
+                        <div class="wrapper-format">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th width="20%" scope="col">Định dạng</th>
+                                        <th width="80%" scope="col">Miêu tả </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-vector-square"></i>
+                                                <span class="ms-2"> AFF</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span> Acorn Draw</span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="fm-fonts" class="item-format py-4">
+                        <p>Fonts</p>
+                        <div class="wrapper-format">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th width="20%" scope="col">Định dạng</th>
+                                        <th width="80%" scope="col">Miêu tả </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-font"></i>
+                                                <span class="ms-2"> AFM</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>Adobe Font Metrics</span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="fm-document" class="item-format py-4">
+                        <p>Các tài liệu</p>
+                        <div class="wrapper-format">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th width="20%" scope="col">Định dạng</th>
+                                        <th width="80%" scope="col">Miêu tả </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-book"></i>
+                                                <span class="ms-2">ABW</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>AbiWord</span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="fm-image" class="item-format py-4">
+                        <p>Image</p>
+                        <div class="wrapper-format">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th width="20%" scope="col">Định dạng</th>
+                                        <th width="80%" scope="col">Miêu tả </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-image"></i>
+                                                <span class="ms-2">PNG</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <span>Png file </span>
+                                                <span
+                                                    class="ms-auto border border-success text-success px-1 rounded">WRTIE</span>
+                                                <span
+                                                    class=" ms-1 border border-info text-info px-1 rounded">READ</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 m-0 d-none d-xl-block ">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item"> <a href="#fm-audio">Audio</a></li>
+                        <li class="list-group-item"> <a href="#fm-image">Image</a></li>
+                        <li class="list-group-item"> <a href="#fm-document">Các tài liệu</a></li>
+                        <li class="list-group-item"> <a href="#fm-fonts">Font</a></li>
+                        <li class="list-group-item"> <a href="#fm-vectors">Vector</a></li>
+                        <li class="list-group-item"> <a href="#fm-video">Video</a></li>
+                        <li class="list-group-item"> <a href="#fm-image">Văn khổ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Hmdigi.com</h4>
+                        <form action="" method="post">
+                            <input type="email" name="email" class=" "><input type="submit" value="Contact">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>HMDIGI</h3>
+                        <p>
+                            19M đường Nguyễn Hữu Cảnh , Phường 19, Bình Thạnh, Thành phố Hồ Chí Minh<br><br>
+                            <strong>Phone:</strong> +09.9999.9999<br>
+                            <strong>Email:</strong> hmdigi@hmdigi.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Trang chủ</h4>
+                        <ul>
+                            <li> <a href="#">Về chúng tôi</a></li>
+                            <li> <a href="#">Bảo mật</a></li>
+                            <li> <a href="#">Định dạng </a></li>
+                            <li> <a href="#">Hỗ trợ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Dịch vụ</h4>
+                        <ul>
+                            <li> <a href="#">Chuyển đổi video</a></li>
+                            <li> <a href="#">Chuyển đổi âm thanh </a></li>
+                            <li> <a href="#">Chuyển đổi tài liệu </a></li>
+                            <li> <a href="#">Chuyển đổi hình ảnh </a></li>
+                            <li> <a href="#">OCR</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Các file đã chuyển đổi </h4>
+                        <p>2 , 9 9 9 , 9 9 9 9 / 99,55 TB </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>HMDIGI</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Tiếng việt <i class="fa-solid fa-earth-americas"></i>
+            </div>
+
+
+
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <div id="preloader_drop">
+        <i class="fa-sharp fa-solid fa-plus"></i>
+    </div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="./assets/vendor/aos/aos.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./assets/vendor/php-email-form/validate.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
