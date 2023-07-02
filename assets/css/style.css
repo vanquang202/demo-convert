@@ -1,4 +1,10 @@
- body {
+
+:root { 
+  --hm-500: rgb(80, 190, 200,.5); 
+  --hm: #50bec8; 
+}
+
+body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
@@ -312,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -321,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile .getstarted {
   margin: 15px;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .navbar-mobile .dropdown ul {
@@ -522,7 +528,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .section-title h2::before {
@@ -646,7 +652,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .why-us .content h4 {
@@ -767,7 +773,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: var(--hm);
   font-family: "Poppins", sans-serif;
 }
 
@@ -804,7 +810,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .skills .progress .skill .val {
@@ -851,7 +857,6 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #37517e;
   transition: ease-in-out 0.3s;
 }
 
@@ -929,7 +934,7 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #37517e;
+  color: var(--hm);
   transition: 0.3s;
 }
 
@@ -982,7 +987,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .contact .info p {
@@ -1165,7 +1170,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 600;
-  color: #37517e;
+  color: var(--hm);
 }
 
 .breadcrumbs ol {
@@ -1193,7 +1198,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: var(--hm);
 }
 
 #footer .footer-newsletter {
@@ -1210,7 +1215,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: var(--hm);
 }
 
 #footer .footer-newsletter form {
@@ -1265,7 +1270,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: var(--hm);
 }
 
 #footer .footer-top .footer-contact p {
@@ -1279,7 +1284,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: var(--hm);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1477,4 +1482,46 @@ i{
 }
 .contact-input:focus{
   outline: none;
+}
+
+.text-hm{
+  color: var(--hm) !important;
+}
+
+.bg-hm{
+  background-color: var(--hm) !important;
+}
+
+.bg-hm-500{
+  background-color: var(--hm-500) !important;
+}
+
+.border-hm{
+  border-color: var(--hm) !important;
+}
+
+.btn-hm{
+  color: #fff;
+  background-color: var(--hm) !important;
+  border-color: var(--hm) !important;
+}
+
+.btn-hm:hover{
+  color: var(--hm) !important;
+  background-color: #fff !important;
+  border-color: var(--hm) !important;
+}
+
+.btn-outline-hm {
+  color: var(--hm);
+  border-color: var(--hm);
+}
+
+.btn-outline-hm:hover {
+  background-color: var(--hm); 
+  color: white;
+}
+
+.mh-100vh{
+  min-height: 100vh !important;
 }

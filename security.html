@@ -29,7 +29,6 @@
     <link href="./assets/css/fontawesome/css/solid.css" rel="stylesheet">
 
     <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="./assets/css/ocr-pricing.css" rel="stylesheet">
 
 </head>
 
@@ -40,13 +39,11 @@
 
             <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logohm.png" width="50px" alt=""></a>
             </h1>
-
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="./ocr.html">OCR</a></li>
-                    <li><a class="nav-link scrollto" href="./ocr-pricing.html">OCR giá</a></li>
 
-                    <li class="dropdown"><a href="#"><span>Chuyển đổi </span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#?"><span>Chuyển đổi </span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Chuyển đổi hình ảnh <i class="fa-solid fa-image"></i> </a></li>
                             <li class="dropdown"><a href="#"><span> Chuyển đổi âm thanh <i
@@ -63,8 +60,27 @@
                             <li><a href="#">Lưu trữ chuyển đổi <i class="fa-solid fa-boxes-stacked"></i> </a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#services">Development Api</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Đăng nhập </a></li>
+                    <li><a class="nav-link scrollto" href="">Development Api</a></li>
+                    <li>
+                        <div class="dropdown ">
+                            <a class="   " type="button" id="dropdownMenuLogin" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Đăng nhập
+                            </a>
+                            <div class="dropdown-menu p-4 bg-light dropdown-menu-login"
+                                aria-labelledby="dropdownMenuLogin">
+                                <input type="text" class="form-control mb-2 w-100" placeholder="Email">
+                                <input type="password" class="form-control mb-2 w-100" placeholder="Mật khẩu ">
+                                <div class="d-flex  align-items-center">
+                                    <button class="btn btn-outline-hm">Đăng nhập</button>
+                                    <img class="ms-auto" src="./assets/img/facebook-icon.png" alt="" width="40px">
+                                    <img src="./assets/img/google-icon.png" alt="" width="40px">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
                     <li><a class="border-primary border px-2 py-1 rounded mx-2 " href="./dangky.html">Đăng ký</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -73,40 +89,60 @@
         </div>
     </header>
 
-    <section id="hero" class="mh-100vh d-flex align-items-center ">
+    <section id="hero" class="  d-flex align-items-center">
 
-        <div class="ocr-price-wrapper mx-auto    mt-5">
+        <div class="container">
             <div class="page-title text-center">
-                <h1 class="text-hm  ">OCR giá</h1>
+                <h1 class="text-hm">Security</h1>
+                <p>Hmdigi chú ý đến sự an toàn của các tệp của bạn. Chúng tôi thực hiện tất cả các biện pháp cần
+                    thiết
+                    để bảo vệ dữ liệu của bạn. <br> Hãy xem các điểm bên dưới để biết chính xác lý do tại sao Hmdigi
+                    an
+                    toàn để sử dụng. </p>
             </div>
-            <div class="text-center shadow border rounded-top p-3">
-                <span>Gói trả trước</span>
-                <div class="mb-2">
-                    <p class="fs-3 fw-bold m-0">3000</p>
-                    <p>Trang</p>
+            <div class="mt-5 w-75 mx-auto row m-0 p-0">
+                <div class="col-xl-6 col-12 mx-0 my-4 p-0 d-flex ">
+                    <div class="mx-2"><i class="fa-solid fa-shield-halved fs-2  "></i></div>
+                    <div class="mx-2">
+                        <h3>Kho lưu trữ</h3>
+                        <small>Các tệp đầu vào và bất kỳ tệp tạm thời nào sẽ bị xóa ngay sau khi chuyển đổi. Các tệp đầu
+                            ra
+                            sẽ bị xóa sau 24 giờ nhưng bạn có thể xóa chúng theo cách thủ công bất kỳ lúc nào. Để làm
+                            như vậy, hãy nhấp vào "Tệp của tôi" ở trên cùng bên phải, sau đó nhấp vào biểu tượng "X" gần
+                            tên tệp bạn muốn xóa.</small>
+                    </div>
                 </div>
-                <input type="range" min="1" max="100" value="50" class="w-75">
-                <div class="mb-2">
-                    <p class="m-0 fw-bold">$299.99</p>
-                    <small>1 cent cho mỗi trang </small>
+                <div class="col-xl-6 col-12 mx-0 my-4 p-0 d-flex ">
+                    <div class="mx-2"><i class="fa-solid fa-shield-halved fs-2  "></i></div>
+                    <div class="mx-2">
+                        <h3>Dịch vụ có thể mở rộng</h3>
+                        <small>Chúng tôi chuyển đổi hơn 1 triệu tệp hàng ngày, hơn 1 PB dữ liệu hàng tháng. Hmdigi vẫn
+                            ổn định trong khi thích ứng với khối lượng công việc ngày càng tăng. Đối với bạn, điều đó có
+                            nghĩa là nếu một số người dùng sử dụng trang web có tải cao nhất, chuyển đổi của bạn sẽ
+                            không bị ảnh hưởng bởi điều đó.</small>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12 mx-0 my-4 p-0 d-flex ">
+                    <div class="mx-2"><i class="fa-solid fa-shield-halved fs-2  "></i></div>
+                    <div class="mx-2">
+                        <h3>Trung tâm dữ liệu được chứng nhận</h3>
+                        <small>Hmdigi chỉ sử dụng các trung tâm dữ liệu và nhà cung cấp dịch vụ đám mây đáng tin cậy và
+                            có độ bảo mật cao, tất cả đều được chứng nhận ISO 27001 (Tiêu chuẩn bảo mật thông
+                            tin).</small>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12 mx-0 my-4 p-0 d-flex ">
+                    <div class="mx-2"><i class="fa-solid fa-shield-halved fs-2  "></i></div>
+                    <div class="mx-2">
+                        <h3>Data </h3>
+                        <small>Hmdigi giữ cho dữ liệu người dùng được tách biệt, điều đó có nghĩa là mỗi chuyển đổi được
+                            thực hiện trong một môi trường hộp cát riêng biệt. Do đó, chỉ bạn mới có quyền truy cập vào
+                            các tệp của mình và ngay cả nhóm Hmdigi cũng không thể truy cập chúng.</small>
+                    </div>
                 </div>
 
-                <button class="btn btn-outline-hm mt-2">Tiếp tục </button>
-            </div>
-            <div class="border shadow  pb-2 border-top-0 rounded-end">
-                <ul class="m-0 p-0 text-center">
-                    <li class="list-group-item border-0"><i class="bx bx-check tetx-success"></i> <b>Vô hạn Kích
-                            thước</b> tập
-                        tin
-                    </li>
-                    <li class="list-group-item border-0"><i class="bx bx-check text-success"></i> Ưu tiên <b>cao</b>
-                        đổi đồng thời
-                    </li>
-                    <li class="list-group-item border-0"><i class="bx bx-check text-success"></i> <b>Trang Adfree</b>
-                    </li>
-                    <li class="list-group-item border-0"><i class="bx bx-check text-success"></i> <b>Hỗ trợ ưu tiên</b>
-                    </li>
-                </ul>
+
+
             </div>
         </div>
 
@@ -114,87 +150,15 @@
 
     <main id="main">
 
-        <section class="detail-end  section-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h4>Các câu hỏi thường gặp</h4>
-                </div>
-
-                <div class="w-50 mx-auto">
-                    <div class="mb-2">
-                        <p class="fw-bold m-0">Tôi có thể hủy đăng ký bất cứ lúc nào không?
-                        </p>
-                        <div>
-                            <p class="m-0">Bạn có thể dễ dàng hủy đăng ký bất cứ lúc nào bằng cách truy cập trang tài
-                                khoản của bạn.
-                            </p>
-                            <p class="m-0">Bạn đã thắng được tính phí cho chu kỳ thanh toán tiếp theo của mình và bạn có
-                                thể tiếp
-                                tục
-                                sử
-                                dụng tài khoản cho đến khi kết thúc thời gian bạn đã thanh toán.</p>
-                        </div>
-                    </div>
-
-                    <div class="mb-2">
-                        <p class="fw-bold m-0">Tôi có thể trả như thế nào?
-                        </p>
-                        <div>
-                            <p class="m-0">Chúng tôi hiện chấp nhận Thẻ tín dụng/thẻ ghi nợ (Visa, MasterCard, Amex,
-                                Discover, Diners
-                                Club,
-                                JCB), Chuyển khoản, PayPal, Amazon, Alipay, Sofort, GiroPay, iDEAL.</p>
-                            <p class="m-0">
-                                Danh sách chính xác các phương thức thanh toán có sẵn tùy thuộc vào quốc gia của bạn.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="mb-2">
-                        <p class="fw-bold m-0">Các tệp cá nhân/chuyên nghiệp của tôi có an toàn khi sử dụng Convertio
-                            không?
-                        </p>
-                        <div>
-                            <p class="m-0">
-                                Có, các tập tin của bạn sẽ được bảo mật 100%. Tất cả thông tin liên lạc giữa thiết bị
-                                của
-                                bạn và
-                                máy chủ của chúng tôi được thực hiện trong kênh bảo mật (SSL) với HSTS được bật, điều
-                                này
-                                ngăn
-                                dữ liệu bị thay đổi hoặc chuyển hướng. Các tệp được liên kết với IP của bạn, vì vậy chỉ
-                                người
-                                dùng, người đã thực hiện chuyển đổi, mới có thể nhận được tệp đầu ra.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="mb-2">
-                        <p class="fw-bold m-0">Tôi có thể được hoàn lại tiền không?
-                        </p>
-                        <div>
-                            <p class="m-0">
-                                Vì chúng tôi cung cấp phiên bản miễn phí cho tất cả người dùng nên chúng tôi sẽ không
-                                hoàn
-                                lại
-                                tiền cho các gói đăng ký sau khi bạn đã quyết định nâng cấp lên gói cao cấp. Xin vui
-                                lòng
-                                xem
-                                lại Chính sách Hoàn tiền và kiểm tra kỹ lưỡng dịch vụ của chúng tôi trước khi quyết định
-                                mua
-                                gói
-                                đăng ký.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-
+        <section class="section-bg">
+            <div class="  p-2">
+                <p class="text-center">If you still have doubts about the safety of our service, you can learn more <br>
+                    in
+                    our <span class="text-danger">Privacy Policy</span> or
+                    visit our <span class="text-danger">Help Center.</span></p>
             </div>
         </section>
+
 
     </main>
 
@@ -235,7 +199,7 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Trang chủ</h4>
                         <ul>
-                            <li> <a href="#">Về chúng tôi</a></li>
+                            <li> <a target="_blank" href="https://hmdigi.com/">Về chúng tôi</a></li>
                             <li> <a href="#">Bảo mật</a></li>
                             <li> <a href="./dinhdang.html">Định dạng </a></li>
                             <li> <a href="#">Hỗ trợ</a></li>
@@ -275,14 +239,12 @@
         </div>
     </footer>
 
-
     <div id="preloader"></div>
     <div id="preloader_drop">
         <i class="fa-sharp fa-solid fa-plus"></i>
     </div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    <a href="#" class="back-to-top btn-hm d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-
     <script src="./assets/vendor/aos/aos.js"></script>
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>

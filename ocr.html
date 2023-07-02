@@ -91,11 +91,11 @@
   </header>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="  d-flex align-items-center">
+  <section id="hero" class=" mh-100vh d-flex align-items-center">
 
     <div class="container">
       <div class="page-title text-center">
-        <h1 class="text-danger  ">OCR (Nhận dạng ký tự quang học) <br> Trực tuyến miễn phí</h1>
+        <h1 class="text-hm  ">OCR (Nhận dạng ký tự quang học) <br> Trực tuyến miễn phí</h1>
         <p>Công cụ tiên tiến để chuyển đổi tài liệu được scan thành Editable Word, Pdf, Excel và các định dạng
           đầu ra Txt (Text).</p>
       </div>
@@ -217,13 +217,13 @@
           <div class="converter d-flex-center w-100 h-100 ps-2">
 
             <div class="d-flex align-items-center gap-2">
-              <button class="btn btn-light"><i class="fa-solid fa-plus text-danger"></i> Thêm nhiều tệp tin </button>
+              <button class="btn btn-light"><i class="fa-solid fa-plus text-hm"></i> Thêm nhiều tệp tin </button>
               <p class="m-0 text-secondary p-0 title-xl">Dùng Ctrl hoặc Shift để thêm nhiều tập </p>
             </div>
             <div class="ms-auto d-flex">
               <i class="p-3 bg-dark fa-brands fa-dropbox fs-5"></i>
               <i class="p-3 bg-dark fa-brands fa-google-drive fs-5 border-start border-secondary"></i>
-              <button class="btn rounded-0 btn-danger">Chuyển đổi <i class="fa-solid fa-chevron-right"></i> </button>
+              <button class="btn rounded-0 btn-hm">Chuyển đổi <i class="fa-solid fa-chevron-right"></i> </button>
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@
             <div class="file-source-button">
 
 
-              <div class="bg-danger rounded shadow p-2 text-light  row m-0 p-0">
+              <div class="bg-hm rounded shadow p-2 text-light  row m-0 p-0">
                 <div class="col-xl-6 col-10 p-0 m-0 d-flex-center p-2">
                   <label for="upload-add" role="button">Chọn tập tin </label>
                 </div>
@@ -292,7 +292,7 @@
         </div>
         <div class=" w-75 mx-auto py-2">
 
-          <div class="row m-0 p-0 mb-2">
+          <div class="bg-hm-500 p-4 text-light row mx-0 my-1 p-0">
             <div class="col-xl-6 col-12 m-0">
               <label class="form-label  ">Ngôn ngữ</label>
               <select class="form-control">
@@ -323,7 +323,7 @@
             </div>
           </div>
 
-          <div class="row m-0 p-0 mb-2  ">
+          <div class="bg-hm-500 p-4 text-light row mx-0   p-0  ">
             <div class="col-xl-6 col-12 m-0">
               <label class="form-label  ">Output Format & Cài đặt</label>
               <select class="form-control">
@@ -348,13 +348,13 @@
                   Số trang
                 </label>
 
-                <input type="text" class="border-0" placeholder="eg:1-23">
+                <input type="text" class="form-control d-block" placeholder="eg:1-23">
               </div>
             </div>
           </div>
 
           <div class="d-flex justify-content-between flex-column align-items-center">
-            <div class="py-2   w-100 text-center border-top  ">
+            <div class="w-100 text-center border-top bg-light p-3 ">
               <p>Lưu chuyển đổi tập tin vào tôi <span class="  ps-1  fw-bold" role="button"> <i
                     class="fa-brands fa-dropbox"></i> Dropbox</span> <span class="border-start ps-1 fw-bold"
                   role="button">
@@ -362,7 +362,7 @@
                   Google
                   driver</span></p>
             </div>
-            <button class="btn btn-danger mx-auto fs-4 px-4 py-2 mt-2">Nhận dạng </button>
+            <button class="btn btn-hm mx-auto fs-4 px-4 py-2 mt-2">Nhận dạng </button>
           </div>
 
         </div>
@@ -374,7 +374,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <p>Làm thế nào để nhận dạng văn bản từ hình ảnh? </p>
+          <h3 class="text-secondary">Làm thế nào để nhận dạng văn bản từ hình ảnh? </h3>
         </div>
 
         <div class="row m-0 p-0">
@@ -407,15 +407,15 @@
 
   </main>
 
-  <footer id="footer">
+  <footer id="footer" class="bg-hm">
 
-    <div class="footer-newsletter">
+    <div class="footer-newsletter bg-light">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h4>Hmdigi.com</h4>
             <form action="" method="post">
-              <input type="email" name="email" class=" "><input type="submit" value="Contact">
+              <input type="email" name="email" class=" contact-input"><input type="submit" value="Contact">
             </form>
           </div>
         </div>
@@ -427,11 +427,16 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>HMDIGI</h3>
+            <h3>
+              <img src="./assets/img/logohm.png" width="50px" alt="">
+            </h3>
+            <p>Công ty trách nhiệm hữu hạn Dịch vụ và Tư vấn Hoàng Minh</p>
+            <br>
             <p>
-              19M đường Nguyễn Hữu Cảnh , Phường 19, Bình Thạnh, Thành phố Hồ Chí Minh<br><br>
+              <b>VPGD:</b> 19M đường Nguyễn Hữu Cảnh , Phường 19, Bình Thạnh, Thành phố Hồ Chí Minh<br>
+              <b>VP:</b> 163 Điện Biên Phủ, Phường 15, Quận BìnhThạnh, TP.HCM<br><br>
               <strong>Phone:</strong> +09.9999.9999<br>
-              <strong>Email:</strong> hmdigi@hmdigi.com<br>
+              <strong>Email:</strong> contact@hmdigi.com , info@hmdigi.com<br>
             </p>
           </div>
 
@@ -440,7 +445,7 @@
             <ul>
               <li> <a href="#">Về chúng tôi</a></li>
               <li> <a href="#">Bảo mật</a></li>
-              <li> <a href="#">Định dạng </a></li>
+              <li> <a href="./dinhdang.html">Định dạng </a></li>
               <li> <a href="#">Hỗ trợ</a></li>
             </ul>
           </div>
@@ -458,7 +463,7 @@
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Các file đã chuyển đổi </h4>
-            <p>2 , 9 9 9 , 9 9 9 9 / 99,55 TB </p>
+            <p><span class="fs-4">2 , 9 9 9 , 9 9 9 9</span> / 99,55 TB </p>
           </div>
 
         </div>
@@ -478,12 +483,13 @@
     </div>
   </footer>
 
+
   <div id="preloader"></div>
   <div id="preloader_drop">
     <i class="fa-sharp fa-solid fa-plus"></i>
   </div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center bg-hm"><i
+      class="bi bi-arrow-up-short "></i></a>
 
   <script src="./assets/vendor/aos/aos.js"></script>
   <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
