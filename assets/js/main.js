@@ -194,5 +194,16 @@
     if (evt.screenX == 0) document.getElementById('preloader_drop').classList.remove('active');
   }
 
+  let targetCount = 0;
+  var interval = setInterval(() => {
+    let data = document.getElementById("count-hm");
+    targetCount = targetCount + 10000;
+    if (targetCount <= data.dataset.end) {
+      document.getElementById("count-hm").innerHTML = new Intl.NumberFormat().format(targetCount);
+    } else {
+      clearInterval(interval);
+    }
+  }, 1);
+
 })()
 
