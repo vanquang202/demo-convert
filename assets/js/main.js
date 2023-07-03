@@ -201,6 +201,7 @@
     if (targetCount <= data.dataset.end) {
       document.getElementById("count-hm").innerHTML = new Intl.NumberFormat().format(targetCount);
     } else {
+      document.getElementById("count-hm").innerHTML = new Intl.NumberFormat().format(data.dataset.end);
       clearInterval(interval);
     }
   }, 1);
