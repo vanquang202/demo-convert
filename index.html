@@ -89,19 +89,17 @@
 
       </div>
 
-      <!-- <div class="convert-container-main mb-2 w-100 shadow ">
+      <div id="convert-main" class="d-none  convert-container-main mb-2 w-100 shadow ">
 
-        <div class="data-wrapper">
+        <div class="data-wrapper" id="data-wrapper">
 
-          <div class="data d-flex-center border-bottom  p-3">
+          <!-- <div class="data d-flex-center border-bottom  p-3">
             <div class="row m-0 p-0 w-100">
               <div class="col-xl-4 col-12 m-0 p-0">
                 <span><i class="fa-solid fa-file p-2 shadow-sm"></i> Sample-50-mb-pdf.life.pdf</span>
               </div>
               <div class="col-xl-4 col-6 m-0 p-0 d-flex px-2 align-items-center justify-content-around">
                 <span>Đến
-
-
                   <span class="ms-2 border border-secondary rounded px-2 py-1 dropdown-toggle" type="button" id="menu-1"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     ...
@@ -142,8 +140,18 @@
                     </div>
                   </div>
                 </span>
-                <span class=" border-hm border rounded px-2 text-hm">Sẵn sàng </span>
-               <span class=" border-warning border rounded px-2 text-warning">Tải lên </span> 
+                <div class="d-flex align-items-center status-file justify-content-between">
+                  <span class=" border-hm border rounded px-2 text-hm">Sẵn sàng </span>
+                </div> 
+                <div class="d-flex align-items-center status-file justify-content-between">
+                  <span class=" border-warning border rounded px-2 text-warning">Tải lên </span>
+                  <span>15%</span>
+                </div>
+                <div class="d-flex align-items-center status-file justify-content-between">
+                  <span class=" border-success border rounded px-2 text-success">Đã kết thúc </span>
+                  <span>1 trang </span>
+                  <button class="btn btn-hm">Tải về </button>
+                </div>
               </div>
               <div class="col-xl-4 col-6 m-0 p-0 d-flex align-items-center">
 
@@ -151,8 +159,11 @@
                 <span class="ms-auto"><i class="fa-solid fa-xmark"></i></span>
               </div>
             </div>
-          </div>
+          </div> -->
+
+
         </div>
+
 
         <div class="file-tool">
           <div class="d-flex-center p-2  ">
@@ -214,14 +225,15 @@
             <div class="ms-auto d-flex">
               <i class="p-3 bg-dark fa-brands fa-dropbox fs-5"></i>
               <i class="p-3 bg-dark fa-brands fa-google-drive fs-5 border-start border-secondary"></i>
-              <button class="btn rounded-0 btn-hm">Chuyển đổi <i class="fa-solid fa-chevron-right"></i> </button>
+              <button id="btn-convert" class="btn rounded-0 btn-hm">Chuyển đổi <i class="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
           </div>
         </div>
 
-      </div> -->
+      </div>
 
-      <div class="convert-container w-100  ">
+      <div id="convert-default" class=" convert-container w-100  ">
 
         <div class="convert-wrapper p-2">
           <div class="converter d-flex-center w-100 h-100">
@@ -236,7 +248,7 @@
 
                   <i class=" fa-brands fa-dropbox fs-4"></i>
                   <i class=" fa-brands fa-google-drive fs-4"></i>
-                  <input type="file" name="" id="upload-add" class="d-none">
+                  <input type="file" name="" id="upload-add" class="d-none" multiple="true">
                 </div>
                 <div
                   class="col-2 m-0 d-flex align-items-center border-start justify-content-center d-xl-none position-relative">
