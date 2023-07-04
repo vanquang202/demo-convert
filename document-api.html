@@ -85,7 +85,7 @@
                     <h2>API Documentation</h2>
                 </div>
                 <div class="py-2  content">
-                    <div id="start-a-new-coversion">
+                    <div id="start-a-new-coversion" class="my-2">
                         <h4>Start a New Conversion</h4>
                         <p>In order to start a new conversion you need to do a following POST request:</p>
                         <p class="bg-dark text-light px-2 py-1">
@@ -102,6 +102,237 @@
                             </p>
                         </div>
 
+                        <div class="bg-white border  ">
+                            <h4 class="m-2">Parameter</h4>
+                            <div class="row m-0 p-0 border-bottom">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Trường </span>
+                                        <span class="ms-auto">Kiểu </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Chi tiết </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>apikey </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>filename </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>input </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>file </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="direct-file-upload-for-conversion" class="my-2">
+                        <h4>Start a New Conversion</h4>
+                        <p>In order to start a new conversion you need to do a following POST request:</p>
+                        <p class="bg-dark text-light px-2 py-1">
+                            POST https://api.convertio.co/convert
+                        </p>
+
+                        <div class="example-code">
+                            <p class="mb-0 bg-white px-2 ">
+                                Usage example:
+                            </p>
+                            <p class="bg-dark text-light px-3 py-2">
+                                curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "file":"http://google.com/",
+                                "outputformat":"png"}' http://api.convertio.co/convert
+                            </p>
+                        </div>
+
+                        <div class="bg-white border  ">
+                            <h4 class="m-2">Parameter</h4>
+                            <div class="row m-0 p-0 border-bottom">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Trường </span>
+                                        <span class="ms-auto">Kiểu </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Chi tiết </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>apikey </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>filename </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>input </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>file </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="ocr" class="my-2">
+                        <h4>List of Conversions (OCR)</h4>
+                        <p>In order to get a list of your conversions and their statuses do following POST request:</p>
+                        <p class="bg-dark text-light px-2 py-1">
+                            POST https://api.convertio.co/convert/list
+                        </p>
+
+                        <div class="example-code">
+                            <p class="mb-0 bg-white px-2 ">
+                                Usage example:
+                            </p>
+                            <p class="bg-dark text-light px-3 py-2">
+                                curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "status": "all", "count": 3}'
+                                http://api.convertio.co/convert/list
+                            </p>
+                        </div>
+
+                        <div class="bg-white border  ">
+                            <h4 class="m-2">Parameter</h4>
+                            <div class="row m-0 p-0 border-bottom">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Trường </span>
+                                        <span class="ms-auto">Kiểu </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Chi tiết </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>apikey </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>status </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 border-bottom text-secondary">
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>count </span>
+                                        <span class="ms-auto">String </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0 p-0  ">
+                                    <div class="d-flex px-3 py-2">
+                                        <span>Your API Key </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -111,23 +342,10 @@
                         <a href="#start-a-new-coversion">Start a New Conversion</a>
                     </li>
                     <li role="button" class="list-group-item">
-                        <a href="">Direct File Upload For Conversion</a>
+                        <a href="#direct-file-upload-for-conversion">Direct File Upload For Conversion</a>
                     </li>
                     <li role="button" class="list-group-item">
-                        <a href="">Get Status of the Conversion</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">
-                            Get Result File Content
-                        </a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">
-                            Delete File/Cancel Conversion
-                        </a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">
+                        <a href="#ocr">
                             List of Conversions
                         </a>
                     </li>

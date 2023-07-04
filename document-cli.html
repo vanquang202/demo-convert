@@ -85,33 +85,65 @@
                     <h2>Command Line Interface</h2>
                 </div>
                 <div class="py-2  content">
-                    <div id="start-a-new-coversion">
-                        <h4>Start a New Conversion</h4>
-                        <p>In order to start a new conversion you need to do a following POST request:</p>
-                        <p class="bg-dark text-light px-2 py-1">
-                            POST https://api.convertio.co/convert
-                        </p>
 
+                    <div id="install">
+                        <h4>Installation</h4>
+                        <p>PHP have to be installed</p>
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Usage example:
+                                Installation
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
-                                curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "file":"http://google.com/",
-                                "outputformat":"png"}' http://api.convertio.co/convert
+                                $ wget --no-check-certificate -O '/usr/local/bin/convertio'
+                                https://api.convertio.co/convertio
+                                $ chmod +x /usr/local/bin/convertio
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="use">
+                        <h4>Usage</h4>
+                        <div class="example-code">
+                            <p class="mb-0 bg-white px-2 ">
+                                Set your CloudConvert API Key as enviroment variable
+                            </p>
+                            <p class="bg-dark text-light px-3 py-2">
+                                export CONVERTIO_API_KEY=_YOUR_API_KEY_
                             </p>
                         </div>
 
+                        <div class="example-code">
+                            <p class="mb-0 bg-white px-2 ">
+                                To convert input.pdf to jpg:
+                            </p>
+                            <p class="bg-dark text-light px-3 py-2">
+                                convertio -f jpg input.pdf
+                            </p>
+                        </div>
+
+                        <div class="example-code">
+                            <p class="mb-0 bg-white px-2 ">
+                                Batch converting is supported:
+                            </p>
+                            <p class="bg-dark text-light px-3 py-2">
+                                convertio -f pdf *.txt
+                                1.txt: Done! [32999 Bytes] => ./1.txt.pdf
+                                2.txt: Done! [32999 Bytes] => ./2.txt.pdf
+
+                                All Done!
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <div class="tab-left  m-0 p-0 d-xl-block d-none">
                 <ul class=" list-group rounded-0 border-0">
                     <li role="button" class="list-group-item active">
-                        <a href="">Installation</a>
+                        <a href="#install">Installation</a>
                     </li>
                     <li role="button" class="list-group-item">
-                        <a href="">Usage</a>
+                        <a href="#use">Usage</a>
                     </li>
                 </ul>
             </div>
