@@ -1,0 +1,20 @@
+.tab-right{
+    margin-left: 10rem;
+    width: 45rem;
+    min-height: 100vh;
+}
+
+.tab-left{
+    right: 10rem; 
+    top: 10rem;
+    width: 25rem; 
+    position: fixed;
+}
+
+@media (max-width: 1200px)
+{
+    .tab-right {
+        width: 100%;
+        margin: 0 ;
+    }
+}

@@ -37,32 +37,19 @@
   <header id="header" class="fixed-top  shadow   ">
     <div class="container d-flex align-items-center  ">
 
-      <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logohm.png" width="50px" alt=""></a>
-      </h1>
+      <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logohm.png" width="50px" alt=""></a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link " href="./ocr.html">OCR</a></li>
+          <li><a class="nav-link" href="./ocr.html">Nhận dạng & Bóc tách</a></li>
+          <li><a class="nav-link" href="./convert-pdf.html">Nén PDF</a></li>
+          <!-- <li><a class="nav-link" href="./ocr.html">Chuyển đổi tệp tin</a></li> -->
 
-          <li class="dropdown"><a href="#?"><span>Chuyển đổi </span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#?"><span>Chuyển đổi tệp tin</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="./convert.html">Chuyển đổi hình ảnh <i class="fa-solid fa-image"></i> </a></li>
-              <li><a href="./convert.html">Chuyển đổi âm thanh <i class="fa-brands fa-soundcloud"></i> </a></li>
-              <!-- <li class="dropdown"><a href="#"><span> Chuyển đổi âm thanh <i class="fa-brands fa-soundcloud"></i>
-                  </span> </a>
-                <ul>
-                  <li><a href="#">Chất lượng 1</a></li>
-                  <li><a href="#">Chất lượng 2</a></li>
-                  <li><a href="#">Chất lượng 3</a></li>
-                </ul>
-              </li> -->
-              <li><a href="./convert.html"> Chuyển đổi video <i class="fa-solid fa-video"></i></a></li>
-              <li><a href="./convert.html"> Chuyển đổi tài liệu <i class="fa-solid fa-file"></i></a></li>
-              <li><a href="./convert.html">Lưu trữ chuyển đổi <i class="fa-solid fa-boxes-stacked"></i> </a>
-              </li>
+              <li><a href="./convert-img.html">Chuyển đổi hình ảnh <i class="fa-solid fa-image"></i> </a></li>
             </ul>
           </li>
-          <li><a class="nav-link " href="./pricing.html">Vật giá </a></li>
-          <li><a class="nav-link " href="./suport.html">Hỗ trợ </a></li>
+          <li><a class="nav-link" href="./document-api.html">Document Api</a></li>
           <li>
             <div class="dropdown ">
               <a class="   " type="button" id="dropdownMenuLogin" data-bs-toggle="dropdown" aria-expanded="false">
@@ -360,52 +347,92 @@
         <div class="section-title">
           <h2>Các Định Dạng Được Hỗ Trợ</h2>
         </div>
-        <div class="row m-0 p-0 w-100">
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm ">8SVX - Amiga 8SVX</button>
+        <div class="row my-0 p-0 mw-100 mx-auto bg-light">
+          <div class="d-flex col-12 p-1   p-3 border-bottom">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <span class=" ms-2">
+              <b>7Z</b>
+            </span>
+            <span class="ms-2">Zip nén tập tin</span>
+            <span class="ms-auto">
+              <a href="">Công cụ chuyển đổi 7Z
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </span>
           </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm ">AAC -
-              Advanced Audio Coding</button>
+          <div class="d-flex col-12 p-1   p-3 border-bottom">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <span class=" ms-2">
+              <b>ACE</b>
+            </span>
+            <span class="ms-2">WinAce tập tin nén</span>
+            <span class="ms-auto">
+              <a href="">Công cụ chuyển đổi ACE
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </span>
           </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm "> AC3 -
-              AC3 Audio File</button>
+          <div class="d-flex col-12 p-1   p-3 border-bottom">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <span class=" ms-2">
+              <b>ALZ</b>
+            </span>
+            <span class="ms-2">ALZip Lưu Trữ</span>
+            <span class="ms-auto">
+              <a href="">Công cụ chuyển đổi ALZ
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </span>
           </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm "> AIFF - Amiga 8SVX</button>
+          <div class="d-flex col-12 p-1   p-3 border-bottom">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <span class=" ms-2">
+              <b>ARC</b>
+            </span>
+            <span class="ms-2">ARC Lưu Trữ</span>
+            <span class="ms-auto">
+              <a href="">Công cụ chuyển đổi ARC
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </span>
           </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm ">AMB -
-              Advanced Audio Coding</button>
+          <div class="d-flex col-12 p-1   p-3 border-bottom">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <span class=" ms-2">
+              <b>ARJ</b>
+            </span>
+            <span class="ms-2">ARJ Lưu Trữ</span>
+            <span class="ms-auto">
+              <a href="">Công cụ chuyển đổi ARJ
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </span>
           </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm "> AMR -
-              AC3 Audio File</button>
+          <div class="d-flex col-12 p-1   p-3 border-bottom">
+            <span>
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <span class=" ms-2">
+              <b> CAB</b>
+            </span>
+            <span class="ms-2"> CAB Lưu Trữ</span>
+            <span class="ms-auto">
+              <a href="">Công cụ chuyển đổi CAB
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </span>
           </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm "> APE
-              - Amiga 8SVX</button>
-          </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm ">AU -
-              Advanced Audio Coding</button>
-          </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm "> AVR -
-              AC3 Audio File</button>
-          </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm ">CAF - Amiga 8SVX</button>
-          </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm ">CDDA -
-              Advanced Audio Coding</button>
-          </div>
-          <div class="col-xl-6 col-12 p-1">
-            <button class=" w-100 btn btn-outline-hm "> CVS -
-              AC3 Audio File</button>
-          </div>
+
         </div>
       </div>
     </section>
@@ -452,18 +479,18 @@
               <li> <a target="_blank" href="https://hmdigi.com/">Về chúng tôi</a></li>
               <li> <a href="./security.html">Bảo mật</a></li>
               <li> <a href="./dinhdang.html">Định dạng </a></li>
-              <li> <a href="#">Hỗ trợ</a></li>
+              <li> <a href="./suport.html">Hỗ trợ</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Dịch vụ</h4>
             <ul>
-              <li> <a href="#">Chuyển đổi video</a></li>
-              <li> <a href="#">Chuyển đổi âm thanh </a></li>
-              <li> <a href="#">Chuyển đổi tài liệu </a></li>
-              <li> <a href="#">Chuyển đổi hình ảnh </a></li>
-              <li> <a href="#">OCR</a></li>
+              <li> <a href="./ocr.html">Nhận dạng và bóc tách</a></li>
+              <li> <a href="./convert-pdf.html">Nén file PDF </a></li>
+              <li> <a href="./convert-img.html">Chuyển đổi hình ảnh </a></li>
+              <li> <a href="./document-api.html">Document Api </a></li>
+              <li> <a href="./pricing.html">Vật giá </a></li>
             </ul>
           </div>
 

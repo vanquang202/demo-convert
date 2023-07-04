@@ -81,15 +81,137 @@
         </div>
     </header>
 
-    <section id="suport-hero" class=" section-bg  d-flex align-items-center flex-shrink-1 pb-0">
+    <section id="hero" class=" mh-100vh d-flex align-items-center">
 
-        <div class="w-100 ">
-            <div class="convert-wrapper text-center py-5">
-                <h1 class="text-hm">Chúng tôi có thể giúp đỡ gì được cho bạn ?</h1>
-                <input type="text" class="form-control w-50 my-5 mx-auto rounded-pill"
-                    placeholder="Tìm kiếm vấn đề của bạn?">
-                <p class="text-secondary">Các chủ đề trợ giúp phổ biến: <a href="">Cách đăng nhập vào tài khoản của
-                        tôi</a>, <a href="">Giới hạn bậc miễn phí</a>, <a href="">Gói cao cấp</a></p>
+        <div class="container">
+            <div class="page-title text-center">
+                <h1 class="text-hm">Công cụ nén file PDF trực tuyến </h1>
+                <p>Chuyển đổi trực tuyến file nén thuộc bất kỳ định dạng nào</p>
+            </div>
+
+            <div id="convert-main" class="d-none convert-container-main mb-2 w-100 shadow ">
+
+                <div id="data-wrapper" class="data-wrapper">
+
+                </div>
+
+                <div class="file-tool">
+                    <div class="d-flex-center p-2  ">
+                        <div class="dropdown  ">
+
+
+                            <span class="  dropdown-toggle" type="button" id="menu-2" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Chuyển đổi tất cả thành
+                            </span>
+                            <div class="dropdown-menu p-3 overflow-hidden" aria-labelledby="menu-2">
+                                <div class="border-bottom">
+                                    <input type="text" placeholder="Tìm kiếm " class="form-control select-btn">
+                                </div>
+                                <div class="row mt-1 m-0 p-0 overflow-scroll h-100">
+                                    <div class="col-3 p-0  ">
+                                        <p class=" m-0 p-1 ps-0" role="button">Hình ảnh </p>
+                                        <p class=" m-0 p-1 ps-0" role="button">Tài liệu </p>
+                                        <p class=" m-0 p-1 ps-0" role="button">Ebook </p>
+                                        <p class=" m-0 p-1 ps-0" role="button">Trình bày </p>
+                                    </div>
+                                    <div class="col-9 p-0  ps-1 ">
+                                        <div class="row m-0 p-1">
+                                            <span class="col-4 m-0 p-1">
+                                                <button class="btn btn-secondary w-100">PNG</button>
+                                            </span>
+                                            <span class="col-4 m-0 p-1">
+                                                <button class="btn btn-secondary w-100">JPEG</button>
+                                            </span>
+                                            <span class="col-4 m-0 p-1">
+                                                <button class="btn btn-secondary w-100">ZIP</button>
+                                            </span>
+                                            <span class="col-4 m-0 p-1">
+                                                <button class="btn btn-secondary w-100">RAR</button>
+                                            </span>
+                                            <span class="col-4 m-0 p-1">
+                                                <button class="btn btn-secondary w-100">RAR</button>
+                                            </span>
+                                            <span class="col-4 m-0 p-1">
+                                                <button class="btn btn-secondary w-100">RAR</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="convert-wrapper">
+                    <div class="converter d-flex-center w-100 h-100 ps-2">
+
+                        <div class="d-flex align-items-center gap-2">
+                            <label for="upload-add" class="btn btn-light"><i class="fa-solid fa-plus text-hm"></i> Thêm
+                                nhiều tệp
+                                tin </label>
+                            <p class="m-0 text-secondary p-0 title-xl">Dùng Ctrl hoặc Shift để thêm nhiều tập </p>
+                        </div>
+                        <div class="ms-auto d-flex">
+                            <i class="p-3 bg-dark fa-brands fa-dropbox fs-5"></i>
+                            <i class="p-3 bg-dark fa-brands fa-google-drive fs-5 border-start border-secondary"></i>
+                            <button id="btn-convert" class="btn rounded-0 btn-hm">Chuyển đổi <i
+                                    class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="convert-default" class="convert-container w-100  ">
+
+                <div class="convert-wrapper p-2">
+                    <div class="converter d-flex-center w-100 h-100">
+                        <div class="file-source-button">
+                            <div class="bg-hm rounded shadow p-2 text-light  row m-0 p-0">
+                                <div class="col-xl-6 col-10 p-0 m-0 d-flex-center p-2">
+                                    <label for="upload-add" role="button">Chọn tập tin </label>
+                                </div>
+                                <div
+                                    class="col-xl-6 col-12 p-0 m-0 border-start d-none d-xl-flex justify-content-evenly align-items-center">
+                                    <label for="upload-add"><i class="fa-solid fa-file-arrow-up fs-4"></i> </label>
+
+                                    <i class=" fa-brands fa-dropbox fs-4"></i>
+                                    <i class=" fa-brands fa-google-drive fs-4"></i>
+                                    <input type="file" name="" id="upload-add" class="d-none" multiple="true">
+                                </div>
+                                <div
+                                    class="col-2 m-0 d-flex align-items-center border-start justify-content-center d-xl-none position-relative">
+                                    <div class="dropdown">
+                                        <a class="  dropdown-toggle" type="button" id="dropdownMenuFileSelectMobile"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-mobile "
+                                            aria-labelledby="dropdownMenuFileSelectMobile">
+                                            <li><a class="dropdown-item text-secondary " href="#">Từ Dropbox <i
+                                                        class=" fa-brands fa-dropbox fs-4"></i></a>
+                                            </li>
+                                            <li><a class="dropdown-item text-secondary " href="#">Từ Google driver <i
+                                                        class=" fa-brands fa-google-drive fs-4"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--   -->
+                            <p class="text-secondary mt-1 fs-7"><i class="fa-solid fa-lock"></i> Thả tập tin ở đây. 100
+                                MB Kích thước
+                                file
+                                tối
+                                đa hoặc là <a href="./dangky.html" class="text-light">Đăng ký</a></p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -97,7 +219,7 @@
 
     <main id="main">
 
-        <section id="services" class="services section-bg ">
+        <section id="services" class="services bg-light section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="row m-0 p-0">
@@ -177,33 +299,98 @@
             </div>
         </section>
 
-        <section id="detail-developer" class="  ">
+        <section id="detail-developer" class=" section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h5>Các câu hỏi được quan tâm</h5>
+                    <h2>Các Định Dạng Được Hỗ Trợ</h2>
                 </div>
-                <div class="row m-0 p-0">
-                    <div class="col-xl-4 col-12 py-2 px-4 my-2">
-                        <a href="">Chính sách lưu giữ tệp và mối quan tâm về quyền riêng tư?</a>
+                <div class="row my-0 p-0 mw-100 mx-auto bg-light">
+                    <div class="d-flex col-12 p-1   p-3 border-bottom">
+                        <span>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class=" ms-2">
+                            <b>7Z</b>
+                        </span>
+                        <span class="ms-2">Zip nén tập tin</span>
+                        <span class="ms-auto">
+                            <a href="">Công cụ chuyển đổi 7Z
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </span>
                     </div>
-                    <div class="col-xl-4 col-12 py-2 px-4 my-2">
-                        <a href="">Sự cố tải lên liên quan đến trình duyệt của Microsoft Edge
+                    <div class="d-flex col-12 p-1   p-3 border-bottom">
+                        <span>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class=" ms-2">
+                            <b>ACE</b>
+                        </span>
+                        <span class="ms-2">WinAce tập tin nén</span>
+                        <span class="ms-auto">
+                            <a href="">Công cụ chuyển đổi ACE
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="d-flex col-12 p-1   p-3 border-bottom">
+                        <span>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class=" ms-2">
+                            <b>ALZ</b>
+                        </span>
+                        <span class="ms-2">ALZip Lưu Trữ</span>
+                        <span class="ms-auto">
+                            <a href="">Công cụ chuyển đổi ALZ
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="d-flex col-12 p-1   p-3 border-bottom">
+                        <span>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class=" ms-2">
+                            <b>ARC</b>
+                        </span>
+                        <span class="ms-2">ARC Lưu Trữ</span>
+                        <span class="ms-auto">
+                            <a href="">Công cụ chuyển đổi ARC
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="d-flex col-12 p-1   p-3 border-bottom">
+                        <span>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class=" ms-2">
+                            <b>ARJ</b>
+                        </span>
+                        <span class="ms-2">ARJ Lưu Trữ</span>
+                        <span class="ms-auto">
+                            <a href="">Công cụ chuyển đổi ARJ
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="d-flex col-12 p-1   p-3 border-bottom">
+                        <span>
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+                        <span class=" ms-2">
+                            <b> CAB</b>
+                        </span>
+                        <span class="ms-2"> CAB Lưu Trữ</span>
+                        <span class="ms-auto">
+                            <a href="">Công cụ chuyển đổi CAB
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </span>
+                    </div>
 
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-12 py-2 px-4 my-2">
-                        <a href="">Làm cách nào để thay đổi cài đặt chuyển đổi tệp?</a>
-                    </div>
-                    <div class="col-xl-4 col-12 py-2 px-4 my-2">
-                        <a href="">Làm cách nào để chuyển đổi hình ảnh thành định dạng tệp thêu?</a>
-                    </div>
-                    <div class="col-xl-4 col-12 py-2 px-4 my-2">
-                        <a href="">Giới hạn cấp miễn phí cho chuyển đổi tệp</a>
-                    </div>
-                    <div class="col-xl-4 col-12 py-2 px-4 my-2">
-                        <a href="">Giới hạn bậc miễn phí để nhận dạng văn bản (Công cụ OCR)</a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -219,8 +406,8 @@
                     <div class="col-lg-6">
                         <h4>Hmdigi.com</h4>
                         <form action="" method="post">
-                            <input type="email" name="email" class=" contact-input"><input type="submit" value="Contact"
-                                class="bg-hm">
+                            <input type="email" name="email" class=" contact-input"><input type="submit"
+                                value="Contact">
                         </form>
                     </div>
                 </div>
@@ -296,6 +483,12 @@
             class="bi bi-arrow-up-short"></i></a>
     <script src="./assets/vendor/aos/aos.js"></script>
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./assets/vendor/php-email-form/validate.js"></script>
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+
     <script src="./assets/js/main.js"></script>
 
 </body>
