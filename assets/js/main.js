@@ -255,10 +255,24 @@
     }
   });
 
+  const setIntervalAsync = ms => new Promise(resolve => {
+    let progress = 0;
+    let interv = setInterval(() => {
+      progress++;
+      if (progress == 10) {
+        console.log("here");
+        resolve
+        clearInterval(interv);
+      }
+    }, 1000);
+  });
+
   document.getElementById("btn-convert").addEventListener("click", (e) => {
     let documents = document.querySelectorAll(".status-file");
 
     for (let index = 0; index < documents.length; index++) {
+      let p = Promise.resolve();
+      p.then(() => setIntervalAsync())
       const element = documents[index];
       let progress = 0;
       let interv = setInterval(() => {
@@ -339,6 +353,7 @@
   let targetCount = 0;
   var interval = setInterval(() => {
     let data = document.getElementById("count-hm");
+    if (!data) return clearInterval(interval);
     targetCount = targetCount + 10000;
     if (targetCount <= data.dataset.end) {
       document.getElementById("count-hm").innerHTML = new Intl.NumberFormat().format(targetCount);
