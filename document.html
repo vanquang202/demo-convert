@@ -29,7 +29,6 @@
     <link href="./assets/css/fontawesome/css/solid.css" rel="stylesheet">
 
     <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="./assets/css/document.css" rel="stylesheet">
 
 </head>
 
@@ -42,7 +41,7 @@
             </h1>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link" href="./document.html">Tài liệu </a></li>
+                    <li><a class="nav-link" href="./document-api.html">Tài liệu </a></li>
                     <li><a class="nav-link" href="./document-cli.html">CLI</a></li>
                     <li><a class="nav-link" href="./dev-pricing.html">Các gói đăng ký </a></li>
                     <!-- <li><a class="nav-link" href="./ocr.html">Chuyển đổi tệp tin</a></li> -->
@@ -65,7 +64,10 @@
                             </div>
                         </div>
                     </li>
-                    <li><a class="border-primary border px-2 py-1 rounded mx-2 " href="#">Bắt đầu với một
+
+
+                    <li><a class="border-primary border px-2 py-1 rounded mx-2 " href="./dev-pricing.html">Bắt đầu với
+                            một
                             API Key</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -74,71 +76,110 @@
         </div>
     </header>
 
-    <main id="main" class="mt-5">
+    <section style="clip-path: ellipse(97% 67% at 51% 32%);" class="h-50 text-white bg-hm  d-flex align-items-center">
 
-        <section id="services" class="services section-bg ">
+        <div class="  container mt-5">
+            <div class="page-title text-center">
+                <h1 class=" ">For Developers</h1>
+                <p>Chúng tôi thiết kế API của chúng tôi là phát triển thân thiện với tài liệu tuyệt vời, mẫu mã rõ ràng
+                    và một nhóm hỗ trợ nhồi hoàn toàn bởi các nhà phát triển. </p>
+                <a href="./dev-pricing.html"
+                    class=" bg-hm fw-bold text-white border border-light rounded-0 pt-2 pb-2 px-3 fs-5 position-relative">
+                    Đăng ký miễn phí
+                    <span
+                        class="position-absolute text-white  rounded-bottom  top-100 end-0 w-100 fs-7 border bg-danger border-danger  ">Miễn
+                        phí 1 Key</span>
+                </a>
+            </div>
+        </div>
 
-            <div class="tab-right bg-light p-2" data-aos="fade-up">
-                <div class="border-bottom border-5 border-hm">
-                    <h2>API Documentation</h2>
-                </div>
-                <div class="py-2  content">
-                    <div id="start-a-new-coversion">
-                        <h4>Start a New Conversion</h4>
-                        <p>In order to start a new conversion you need to do a following POST request:</p>
-                        <p class="bg-dark text-light px-2 py-1">
-                            POST https://api.convertio.co/convert
-                        </p>
+    </section>
 
-                        <div class="example-code">
-                            <p class="mb-0 bg-white px-2 ">
-                                Usage example:
+    <main id="main">
+
+        <section id="services" class="services   ">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row m-0 p-0   mw-100 mx-auto ">
+
+                    <!-- <div class="col-12 p-0 m-0">
+                        <div class="bg-light  m-2 p-3">
+                            <h5>API KEY </h5>
+                            <p> Đăng ký miễn phí để có được một API Key</p>
+                            <button class="btn btn-hm">Đăng ký </button>
+                        </div>
+                    </div> -->
+
+                    <div class="col-xl-6 col-12 p-0 m-0   align-items-stretch d-flex ">
+                        <div class="bg-light w-100  m-2 p-3">
+                            <h5>Tài liệu</h5>
+                            <p> Tài liệu này bao gồm làm thế nào để sử dụng API.</p>
+                            <p> Tài liệu có sẵn trong tiếng Anh</p>
+                            <a href="./document-api.html" class="btn btn-hm">Tài liệu API</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-12 p-0 m-0   align-items-stretch d-flex ">
+                        <div class="bg-light w-100  m-2 p-3">
+                            <h5>CLI</h5>
+                            <p> Giao diện dòng lệnh của chúng tôi. Tài liệu có sẵn trong tiếng Anh
                             </p>
-                            <p class="bg-dark text-light px-3 py-2">
-                                curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "file":"http://google.com/",
-                                "outputformat":"png"}' http://api.convertio.co/convert
+                            <a href="./document-cli.html" class="btn btn-hm ">CLI Tài liệu</a>
+                            <a href="https://github.com/" class="btn btn-hm ms-2">Github </a>
+                        </div>
+                    </div>
+
+                    <div class="  col-12 p-0 m-0">
+                        <div class=" bg-light  m-2 p-3">
+                            <h5>Hỗ trợ ngôn ngữ chính thức </h5>
+                            <p> Mà nguồn ngôn ngữ
+                            </p>
+                            <div class="bg-white border-bottom px-3 py-2 d-flex">
+                                <span>PHP </span>
+                                <span class="ms-auto "> Mã nguồn <a class="text-hm fw-bold"
+                                        href="https://github.com/">Github</a></span>
+                            </div>
+                            <div class="bg-white border-bottom px-3 py-2 d-flex">
+                                <span>Node js </span>
+                                <span class="ms-auto text-secondary "> Sắp có </span>
+                            </div>
+                            <div class="bg-white border-bottom px-3 py-2 d-flex">
+                                <span>Python </span>
+                                <span class="ms-auto text-secondary "> Sắp có </span>
+                            </div>
+                            <p class="mt-2 mb-0 text-secondary"> Chúng tôi sẵn sàng nhận các đóng góp & ý kiến của bạn
+                                để cải
+                                thiện mã nguồn
                             </p>
                         </div>
-
                     </div>
-                </div>
-            </div>
-            <div class="tab-left  m-0 p-0 d-xl-block d-none">
-                <ul class=" list-group rounded-0 border-0">
-                    <li role="button" class="list-group-item active">
-                        <a href="#start-a-new-coversion">Start a New Conversion</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">Direct File Upload For Conversion</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">Get Status of the Conversion</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">
-                            Get Result File Content
-                        </a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">
-                            Delete File/Cancel Conversion
-                        </a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="">
-                            List of Conversions
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
+                    <div class="  col-12 p-0 m-0">
+                        <div class=" bg-light  m-2 p-3">
+                            <h5>OCR via API </h5>
+                            <p>
+                                Bạn có thể tạo OCR qua API. Nếu bạn đã đặt mua các gói <span class="text-danger">OCR trả
+                                    trước</span> và có các trang OCR
+                                trong tài khoản của mình, chúng sẽ được sử dụng theo tỷ lệ 1:1 (1 trang OCR qua API = 1
+                                trang OCR), nếu không, số phút API sẽ được sử dụng theo tỷ lệ 1: 3 (1 trang OCR qua API
+                                = 3 phút API). Chi phí của các tùy chọn này gần như giống nhau.
+                            </p>
+                            <button class="btn btn-outline-hm ">Tài liệu ORC Api </button>
+                            <button class="btn btn-outline-hm ms-2">Php Example </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
         </section>
 
     </main>
 
-    <footer id="footer" class="bg-hm">
+    <footer id="footer" class="bg-hm border-top">
 
-        <div class="footer-top py-3 h-100">
+        <div class="footer-top py-3 h-100  ">
             <div class="container">
                 <div class="row">
 
@@ -161,6 +202,9 @@
             <div class="credits">
                 Tiếng việt <i class="fa-solid fa-earth-americas"></i>
             </div>
+
+
+
         </div>
     </footer>
 
