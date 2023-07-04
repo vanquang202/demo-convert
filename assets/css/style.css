@@ -1526,7 +1526,7 @@ i{
   min-height: 100vh !important;
 }
 
-li.active{
+a.active{
   background-color:var(--hm) !important;
   color: #ffffff !important;
 }

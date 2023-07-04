@@ -85,13 +85,19 @@
                     <h2>Command Line Interface</h2>
                 </div>
                 <div class="py-2  content">
-
-                    <div id="install">
-                        <h4>Installation</h4>
-                        <p>PHP have to be installed</p>
+                    <div class="mt-2">
+                        <h4>Bản ghi âm này đã được lưu trữ</h4>
+                        <p>Tất cả các bản ghi không có người nhận (những bản ghi không được liên kết với bất kỳ tài
+                            khoản người dùng nào) sẽ tự động được lưu trữ 7 ngày sau khi tải lên.</p>
+                        <p>LI cho Convertio này cho phép chuyển đổi tệp dễ dàng và nhanh chóng bằng thiết bị đầu cuối.
+                            Để biết thêm thông tin và mã nguồn, hãy xem kho lưu trữ trên GitHub.</p>
+                    </div>
+                    <div id="install" class="section-id">
+                        <h4>Cài đặt</h4>
+                        <p>PHP phải được cài đặt</p>
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Installation
+                                Cài đặt
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 $ wget --no-check-certificate -O '/usr/local/bin/convertio'
@@ -101,11 +107,11 @@
                         </div>
                     </div>
 
-                    <div id="use">
-                        <h4>Usage</h4>
+                    <div id="use" class="section-id">
+                        <h4>Sử dụng</h4>
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Set your CloudConvert API Key as enviroment variable
+                                Đặt Khóa API CloudConvert của bạn làm biến môi trường
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 export CONVERTIO_API_KEY=_YOUR_API_KEY_
@@ -114,7 +120,7 @@
 
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                To convert input.pdf to jpg:
+                                Để chuyển đổi input.pdf sang jpg:
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 convertio -f jpg input.pdf
@@ -123,7 +129,7 @@
 
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Batch converting is supported:
+                                Chuyển đổi hàng loạt được hỗ trợ:
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 convertio -f pdf *.txt
@@ -138,14 +144,8 @@
                 </div>
             </div>
             <div class="tab-left  m-0 p-0 d-xl-block d-none">
-                <ul class=" list-group rounded-0 border-0">
-                    <li role="button" class="list-group-item active">
-                        <a href="#install">Installation</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="#use">Usage</a>
-                    </li>
-                </ul>
+                <a href="#install" class="list-group-item section-select">Cài đặt</a>
+                <a href="#use" class="list-group-item section-select">Sử dụng</a>
             </div>
 
         </section>

@@ -85,16 +85,16 @@
                     <h2>API Documentation</h2>
                 </div>
                 <div class="py-2  content">
-                    <div id="start-a-new-coversion" class="my-2">
-                        <h4>Start a New Conversion</h4>
-                        <p>In order to start a new conversion you need to do a following POST request:</p>
+                    <div id="start-a-new-coversion" class=" section-id my-2">
+                        <h4>Bắt đầu một chuyển đổi mới</h4>
+                        <p>Để bắt đầu chuyển đổi mới, bạn cần thực hiện yêu cầu POST sau:</p>
                         <p class="bg-dark text-light px-2 py-1">
                             POST https://api.convertio.co/convert
                         </p>
 
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Usage example:
+                                Ví dụ sử dụng:
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "file":"http://google.com/",
@@ -103,7 +103,7 @@
                         </div>
 
                         <div class="bg-white border  ">
-                            <h4 class="m-2">Parameter</h4>
+                            <h4 class="m-2">Tham số</h4>
                             <div class="row m-0 p-0 border-bottom">
                                 <div class="col-6 m-0 p-0  ">
                                     <div class="d-flex px-3 py-2">
@@ -172,16 +172,16 @@
                         </div>
 
                     </div>
-                    <div id="direct-file-upload-for-conversion" class="my-2">
-                        <h4>Start a New Conversion</h4>
-                        <p>In order to start a new conversion you need to do a following POST request:</p>
+                    <div id="direct-file-upload-for-conversion" class=" section-id my-2">
+                        <h4>Tải lên tệp trực tiếp để chuyển đổi</h4>
+                        <p>Để bắt đầu chuyển đổi mới, bạn cần thực hiện yêu cầu POST sau:</p>
                         <p class="bg-dark text-light px-2 py-1">
                             POST https://api.convertio.co/convert
                         </p>
 
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Usage example:
+                                Ví dụ sử dụng:
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "file":"http://google.com/",
@@ -190,7 +190,7 @@
                         </div>
 
                         <div class="bg-white border  ">
-                            <h4 class="m-2">Parameter</h4>
+                            <h4 class="m-2">Tham số </h4>
                             <div class="row m-0 p-0 border-bottom">
                                 <div class="col-6 m-0 p-0  ">
                                     <div class="d-flex px-3 py-2">
@@ -259,16 +259,17 @@
                         </div>
 
                     </div>
-                    <div id="ocr" class="my-2">
-                        <h4>List of Conversions (OCR)</h4>
-                        <p>In order to get a list of your conversions and their statuses do following POST request:</p>
+                    <div id="ocr" class=" section-id my-2">
+                        <h4>Nhận dạng và bóc tách (OCR)</h4>
+                        <p>Để có được danh sách các chuyển đổi của bạn và trạng thái của chúng, hãy thực hiện theo yêu
+                            cầu POST:</p>
                         <p class="bg-dark text-light px-2 py-1">
                             POST https://api.convertio.co/convert/list
                         </p>
 
                         <div class="example-code">
                             <p class="mb-0 bg-white px-2 ">
-                                Usage example:
+                                Ví dụ sử dụng:
                             </p>
                             <p class="bg-dark text-light px-3 py-2">
                                 curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "status": "all", "count": 3}'
@@ -277,7 +278,7 @@
                         </div>
 
                         <div class="bg-white border  ">
-                            <h4 class="m-2">Parameter</h4>
+                            <h4 class="m-2">Tham số</h4>
                             <div class="row m-0 p-0 border-bottom">
                                 <div class="col-6 m-0 p-0  ">
                                     <div class="d-flex px-3 py-2">
@@ -337,19 +338,13 @@
                 </div>
             </div>
             <div class="tab-left  m-0 p-0 d-xl-block d-none">
-                <ul class=" list-group rounded-0 border-0">
-                    <li role="button" class="list-group-item active">
-                        <a href="#start-a-new-coversion">Start a New Conversion</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="#direct-file-upload-for-conversion">Direct File Upload For Conversion</a>
-                    </li>
-                    <li role="button" class="list-group-item">
-                        <a href="#ocr">
-                            List of Conversions
-                        </a>
-                    </li>
-                </ul>
+                <a class="section-select list-group-item active" href="#start-a-new-coversion">Start a New
+                    Bắt đầu một chuyển đổi mới</a>
+                <a class="section-select list-group-item" href="#direct-file-upload-for-conversion">Direct File
+                    Tải lên tệp trực tiếp để chuyển đổi</a>
+                <a class="section-select list-group-item" href="#ocr">
+                    Nhận dạng và bóc tách (OCR)
+                </a>
             </div>
 
         </section>

@@ -248,7 +248,7 @@
     document.getElementById("data-wrapper").innerHTML = newHtml;
   }
 
-  document.getElementById("data-wrapper").addEventListener("click", (e) => {
+  if (document.getElementById("data-wrapper")) document.getElementById("data-wrapper").addEventListener("click", (e) => {
     if (e.target && e.target.nodeName == "I" && e.target.dataset.index) {
       files.splice(e.target.dataset.index, 1);
       renderFiles();
@@ -267,7 +267,7 @@
     }, 1000);
   });
 
-  document.getElementById("btn-convert").addEventListener("click", (e) => {
+  if (document.getElementById("btn-convert")) document.getElementById("btn-convert").addEventListener("click", (e) => {
     let documents = document.querySelectorAll(".status-file");
 
     for (let index = 0; index < documents.length; index++) {
@@ -293,7 +293,7 @@
     }
   });
 
-  document.getElementById("upload-add").addEventListener("change", (evt) => {
+  if (document.getElementById("upload-add")) document.getElementById("upload-add").addEventListener("change", (evt) => {
     for (let index = 0; index < evt.target.files.length; index++) {
       const file = evt.target.files[index];
       files.push(file);
@@ -305,10 +305,12 @@
 
   let dropZone = document.getElementById('hero');
   let dropZoneLoading = document.getElementById('preloader_drop');
-  dropZone.addEventListener('dragover', handleDragOver, false);
-  dropZoneLoading.addEventListener('dragleave', handleDragLeave, false);
-  dropZoneLoading.addEventListener('dragover', handleDragOverLoading, false);
-  dropZoneLoading.addEventListener('drop', dropHandler, false);
+  if (dropZone) dropZone.addEventListener('dragover', handleDragOver, false);
+  if (dropZoneLoading) {
+    dropZoneLoading.addEventListener('dragleave', handleDragLeave, false);
+    dropZoneLoading.addEventListener('dragover', handleDragOverLoading, false);
+    dropZoneLoading.addEventListener('drop', dropHandler, false);
+  }
 
   function formatBytes(bytes, decimals = 2) {
     if (!+bytes) return '0 Bytes'
@@ -362,6 +364,28 @@
       clearInterval(interval);
     }
   }, 1);
+
+  var sections = document.querySelectorAll('.section-id');
+  var navLinks = document.querySelectorAll('.section-select');
+
+  window.addEventListener('scroll', function () {
+    var currentSection = '';
+    sections.forEach(function (section) {
+      var sectionTop = section.offsetTop;
+      var sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(function (link) {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + currentSection) {
+        console.log(link);
+        link.classList.add('active');
+      }
+    });
+  });
 
 })()
 
