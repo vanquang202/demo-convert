@@ -1525,3 +1525,8 @@ i{
 .mh-100vh{
   min-height: 100vh !important;
 }
+
+.active{
+  background-color:var(--hm) !important;
+  color: #ffffff !important;
+}

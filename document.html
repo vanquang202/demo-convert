@@ -78,7 +78,7 @@
 
         <section id="services" class="services section-bg ">
 
-            <div class="tab-right p-2" data-aos="fade-up">
+            <div class="tab-right bg-light p-2" data-aos="fade-up">
                 <div class="border-bottom border-5 border-hm">
                     <h2>API Documentation</h2>
                 </div>
@@ -86,17 +86,49 @@
                     <div id="start-a-new-coversion">
                         <h4>Start a New Conversion</h4>
                         <p>In order to start a new conversion you need to do a following POST request:</p>
+                        <p class="bg-dark text-light px-2 py-1">
+                            POST https://api.convertio.co/convert
+                        </p>
+
+                        <div class="example-code">
+                            <p class="mb-0 bg-white px-2 ">
+                                Usage example:
+                            </p>
+                            <p class="bg-dark text-light px-3 py-2">
+                                curl -i -X POST -d '{"apikey": "_YOUR_API_KEY_", "file":"http://google.com/",
+                                "outputformat":"png"}' http://api.convertio.co/convert
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="tab-left  m-0 p-0 d-xl-block d-none">
-                <ul class=" list-group">
-                    <li role="button" class="list-group-item active">Start a New Conversion</li>
-                    <li role="button" class="list-group-item">Direct File Upload For Conversion</li>
-                    <li role="button" class="list-group-item">Get Status of the Conversion</li>
-                    <li role="button" class="list-group-item">Get Result File Content</li>
-                    <li role="button" class="list-group-item">Delete File/Cancel Conversion</li>
-                    <li role="button" class="list-group-item">List of Conversions</li>
+                <ul class=" list-group rounded-0 border-0">
+                    <li role="button" class="list-group-item active">
+                        <a href="#start-a-new-coversion">Start a New Conversion</a>
+                    </li>
+                    <li role="button" class="list-group-item">
+                        <a href="">Direct File Upload For Conversion</a>
+                    </li>
+                    <li role="button" class="list-group-item">
+                        <a href="">Get Status of the Conversion</a>
+                    </li>
+                    <li role="button" class="list-group-item">
+                        <a href="">
+                            Get Result File Content
+                        </a>
+                    </li>
+                    <li role="button" class="list-group-item">
+                        <a href="">
+                            Delete File/Cancel Conversion
+                        </a>
+                    </li>
+                    <li role="button" class="list-group-item">
+                        <a href="">
+                            List of Conversions
+                        </a>
+                    </li>
                 </ul>
             </div>
 
