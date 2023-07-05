@@ -1531,3 +1531,7 @@ a.active{
   font-weight: bold;
   color: var(--hm) !important;
 }
+
+.tab-left>a{
+  transition: all .2s;
+}
