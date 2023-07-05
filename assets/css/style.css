@@ -1527,6 +1527,7 @@ i{
 }
 
 a.active{
-  background-color:var(--hm) !important;
-  color: #ffffff !important;
+  border-left: 5px solid var(--hm) !important;
+  font-weight: bold;
+  color: var(--hm) !important;
 }
