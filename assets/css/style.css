@@ -1535,3 +1535,9 @@ a.active{
 .tab-left>a{
   transition: all .2s;
 }
+
+@media (max-width: 768px) {
+  .w-sm-100{
+    width: 100% !important;
+  }
+}
