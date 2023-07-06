@@ -1526,7 +1526,7 @@ i{
   min-height: 100vh !important;
 }
 
-a.active{
+.tab-left>a.active{
   border-left: 5px solid var(--hm) !important;
   font-weight: bold;
   color: var(--hm) !important;
